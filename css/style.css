@@ -1,0 +1,183 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estructura */
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+main {
+  flex: 1;
+}
+
+/* Header y Footer */
+header, footer {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+/* Contenedor general */
+.container {
+  max-width: 1140px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Tarjetas */
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.card-hover:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+/* Botones */
+.btn {
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+/* Formularios */
+.form-control,
+.form-select {
+  border-radius: 6px;
+}
+
+.form-label {
+  font-weight: 500;
+}
+
+/* Animación Hero Banner */
+.hero {
+  background: linear-gradient(to right, #00000099, #2d2d2d99), url('../img/banner-motos.png') center/contain no-repeat;
+  color: white;
+  padding: 100px 30px;
+  text-align: center;
+  border-radius: 0;
+  animation: fadeIn 2s ease;
+  margin: 0;
+  min-height: 500px; /* o el valor que prefieras */
+}
+
+
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Formulario de contacto */
+.contacto-form input,
+.contacto-form textarea {
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+  box-shadow: 0 0 12px rgba(33, 150, 243, 0.4);
+  border-color: #2196f3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card img {
+    height: 200px;
+  }
+
+  .row.g-0 {
+    flex-direction: column;
+  }
+}
+.beneficios h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.beneficio-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.beneficio-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.beneficio-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
