@@ -6,7 +6,9 @@
 include 'includes/db.php'; // Conexión a la base de datos
 ?>
 
+
 <?php include 'includes/header.php'; ?>
+
 
 <div class="hero">
   <h1>Bienvenido a ZELVIX</h1>
