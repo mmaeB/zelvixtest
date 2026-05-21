@@ -5,9 +5,10 @@ $pass = "IsNJWDRhiCGZnmDjRSjZUvIOkYxDqfEG";
 $dbname = "railway";
 $port = 3306;
 
-$conn = new mysqli($host, $user, $pass, $dbname, $port);
+// ¡AQUÍ ESTÁ EL CAMBIO! $conn ahora es $conexion
+$conexion = new mysqli($host, $user, $pass, $dbname, $port);
 
-if ($conn->connect_error) {
-    die("Error de conexión: " . $conn->connect_error);
+if ($conexion->connect_error) {
+    die("Error de conexión: " . $conexion->connect_error);
 }
 ?>
